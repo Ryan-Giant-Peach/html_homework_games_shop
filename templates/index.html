@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Orders</title>
+</head>
+<body>
+    <header>GAME PALACE BOUTIQUE</header>
+    <h1>Our Orders</h1>
+    {% for order in open_orders %}
+        <div>
+            <p>
+                <b>Customer Name:</b> <i>{{order.customer_name}}</i><br>
+                <b>Order Date:</b> {{order.order_date}}<br>
+                <b>Game Title:</b> {{order.game_title}}<br>
+                <b>Game Price:</b> £{{order.price}}<br>
+                <b>Quantity:</b> {{order.quantity}}<br>
+                <b><a href="http://localhost:5000/orders/{{order.order_no}}">View order</a></b>
+            </p>
+        </div> 
+    {% endfor %}   
+</body>
+</html>

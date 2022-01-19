@@ -1,0 +1,15 @@
+body {
+
+    color: white;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-color: blueviolet;
+    border: 50px red;
+}
+
+header {
+    font-size: larger;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+
+    /* background-image: url() */
+}
